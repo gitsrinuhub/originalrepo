@@ -19,15 +19,16 @@ jobs:
     steps:
     - name: Git Sync Alternate
       uses: actions/checkout@v3
- #   - run: git clone https://github.com/srinivas3000/testrepo.git
-   # - run: cd testrepo/
-   # - run: git remote add nrepo git@github.com:gitsrinuhub/originalrepo.git
+    - run: git clone https://github.com/srinivas3000/testrepo.git
+    - run: cd testrepo/
+    - run: git remote add nrepo git@github.com:gitsrinuhub/originalrepo.git
     #- run: git fetch -p origin
    # - run: git remote -v 
    # - run: git push --mirror https://gitsrinuhub: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@github.com/gitsrinuhub/originalrepo.git
     - run: git remote update
     - run: git push --mirror https://gitsrinuhub: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@github.com/gitsrinuhub/originalrepo.git 
-      
+    - run: cd ..
+    - run: rm -rf testrepo
       
       
       
