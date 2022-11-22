@@ -24,7 +24,8 @@ jobs:
     - run: git remote add nrepo git@github.com:gitsrinuhub/originalrepo.git
     #- run: git fetch -p origin
     - run: git remote -v 
-    - run: git push --mirror git@github.com:gitsrinuhub/originalrepo.git  
+    - run: git push --mirror https://gitsrinuhub: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@github.com/gitsrinuhub/originalrepo.git
+  
       
       
       
