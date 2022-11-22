@@ -23,6 +23,7 @@ jobs:
     - run: cd replicarepo.git/
     - run: git remote set-url --push origin git@github.com:gitsrinuhub/originalrepo.git
     - run: git fetch -p origin
+    - run: git remote -v 
     - run: git push origin      
       
       
