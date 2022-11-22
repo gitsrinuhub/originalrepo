@@ -20,7 +20,7 @@ jobs:
     - name: Git Sync Alternate
       uses: actions/checkout@v3
     - run: git clone --bare https://github.com/srinivas3000/testrepo.git
-    - run: cd replicarepo.git/
+    - run: cd testrepo.git/
     - run: git remote set-url --push origin git@github.com:gitsrinuhub/originalrepo.git
     - run: git fetch -p origin
     - run: git remote -v 
