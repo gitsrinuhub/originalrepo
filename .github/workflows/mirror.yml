@@ -24,7 +24,7 @@ jobs:
     - run: git remote set-url --push origin git@github.com:gitsrinuhub/originalrepo.git
     - run: git fetch -p origin
     - run: git remote -v 
-    - run: git push --mirror git@github.com:gitsrinuhub/originalrepo.git  
+    - run: sudo git push --mirror git@github.com:gitsrinuhub/originalrepo.git  
       
       
       
