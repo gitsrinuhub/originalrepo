@@ -20,7 +20,7 @@ jobs:
     - name: Git Sync Alternate
       uses: actions/checkout@v3
     - run: git clone --mirror https://gitsrinuhub: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@github.com/gitsrinuhub/replicarepo.git
-    - run: cd testrepo.git/
+    - run: cd replicarepo.git/
     - run: git remote set-url --push origin git@github.com:gitsrinuhub/originalrepo.git
     - run: git fetch -p origin
     - run: git push --mirror
