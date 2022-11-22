@@ -19,11 +19,13 @@ jobs:
     steps:
     - name: Git Sync Alternate
       uses: actions/checkout@v3
-    - run: git clone --mirror https://github.com/srinivas3000/testrepo.git
+    - run: git clone --mirror git@github.com:gitsrinuhub/originalrepo.git
     - run: cd testrepo.git/
-    - run: git remote set-url --push origin git@github.com:gitsrinuhub/originalrepo.git
+    - run: git remote set-url --push origin https://github.com/srinivas3000/testrepo.git
     - run: git fetch -p origin
     - run: git push --mirror
+    
+    
       
       
       
